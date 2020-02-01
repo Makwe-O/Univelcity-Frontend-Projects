@@ -4,67 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Four Column Grid</title>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Reliable, Effecient Delivery</h1>
-        <h1>Powered by Technology</h1>
-        <h3>
+    <main class="container">
+      <section class="main">
+        <h1 class="main__title">Reliable, Effecient Delivery</h1>
+        <h1 class="main__title main__title--bold">Powered by Technology</h1>
+        <h4 class="main__subtitle">
           Our Artificial powered tools use millions of project data points to
           ensure that you project is successful
-        </h3>
+        </h4>
       </section>
-      <section>
-        <div>
-          <div>
-            <h2>Supervisor</h2>
-            <p>Monitor activity to identify project roadblocks</p>
-            <figure>
-              <img
-                src="images/icon-karma.svg"
-                alt="search icon"
-                loading="lazy"
-              />
-            </figure>
-          </div>
+      <section class="four-grid">
+        <div class="column column--cyan">
+          <h2 class="column__title">Supervisor</h2>
+          <p class="column__text">
+            Monitor activity to identify project roadblocks
+          </p>
+          <figure class="column__image">
+            <img
+              src="images/icon-supervisor.svg"
+              alt="search icon"
+              loading="lazy"
+              width="50"
+            />
+          </figure>
         </div>
         <div>
-          <div>
-            <h2>Team Builder</h2>
-            <p>
+          <div class="column column--red">
+            <h2 class="column__title">Team Builder</h2>
+            <p class="column__text">
               Scans our talent network to create the optimal team for your
               project
             </p>
-            <figure>
+            <figure class="column__image">
               <img
-                src="images/icon-supervisor.svg"
+                src="images/icon-team-builder.svg"
                 alt="home icon"
                 loading="lazy"
+                width="50"
               />
             </figure>
           </div>
 
-          <div>
-            <h2>Karma</h2>
-            <p>Regularlyevaluates our talent to ensure quality</p>
-            <figure>
-              <img src="images/icon-karma.svg" alt="bulb icon" loading="lazy" />
+          <div class="column column--orange">
+            <h2 class="column__title">Karma</h2>
+            <p class="column__text">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <figure class="column__image">
+              <img
+                src="images/icon-karma.svg"
+                alt="bulb icon"
+                width="50"
+                loading="lazy"
+              />
             </figure>
           </div>
         </div>
         <div>
-          <div>
-            <h2>Calculator</h2>
-            <p>
+          <div class="column column--blue">
+            <h2 class="column__title">Calculator</h2>
+            <p class="column__text">
               Uses data from past projects to provide better delivery estimates
             </p>
-            <figure>
+            <figure class="column__image">
               <img
                 src="images/icon-calculator.svg"
                 alt="monitor icon"
                 loading="lazy"
+                width="50"
               />
             </figure>
           </div>
