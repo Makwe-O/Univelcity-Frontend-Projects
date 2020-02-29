@@ -200,3 +200,58 @@ footer {
   font-size: 14px;
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+  .secure__header,
+  .productive__header {
+    font-size: 30px;
+    font-family: 'Raleway';
+    line-height: 1.4;
+    color: hsl(243, 87%, 12%);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav__list {
+    justify-content: center;
+  }
+  .nav__list li:last-child {
+    padding: 0 15px;
+  }
+  .nav__list li {
+    padding: 0 15px;
+  }
+  .secure__container,
+  .productive__container,
+  .early__container {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secure__text,
+  .productive__text {
+    margin-right: 0px;
+    text-align: center;
+    order: 1;
+    margin-top: 40px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+  .early__form__input,
+  .btn--early,
+  .early__text,
+  .early__form {
+    width: 100%;
+  }
+  .early__form__input {
+    padding: 0;
+    padding-left: 10px;
+  }
+}
